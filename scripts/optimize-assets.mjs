@@ -10,15 +10,15 @@ const runtimeNodeModules =
   'C:/Users/似等/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
 const sharp = require(path.join(runtimeNodeModules, '.pnpm', 'sharp@0.34.5', 'node_modules', 'sharp'));
 const mediaDir = path.join(root, 'public', 'media');
-const projectDir = path.join(mediaDir, 'projects');
-const outDir = path.join(projectDir, 'optimized');
+const sourceProjectDir = path.join(root, 'source-media', 'projects');
+const outDir = path.join(mediaDir, 'projects', 'optimized');
 
 await fs.mkdir(outDir, { recursive: true });
 
-const sourceImages = (await fs.readdir(projectDir)).filter((name) => /\.(jpe?g|png)$/i.test(name));
+const sourceImages = (await fs.readdir(sourceProjectDir)).filter((name) => /\.(jpe?g|png)$/i.test(name));
 
 for (const file of sourceImages) {
-  await sharp(path.join(projectDir, file))
+  await sharp(path.join(sourceProjectDir, file))
     .rotate()
     .resize({ width: 1100, withoutEnlargement: true })
     .webp({ quality: 76, effort: 5 })

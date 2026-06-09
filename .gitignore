@@ -3,6 +3,7 @@ dist/
 *.local
 .DS_Store
 perf-trace-*.json
+source-media/
 public/media/projects/*.jpg
 public/media/projects/*.jpeg
 public/media/projects/*.png
