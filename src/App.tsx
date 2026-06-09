@@ -557,7 +557,7 @@ function App() {
           <div className="section-heading">
             <p className="section-eyebrow">Selected Work</p>
             <SplitTextLite text="精选项目" as="h2" />
-            <SplitTextLite text="把品牌、内容、调研和产品原型连成一条执行链路。" as="p" by="words" />
+            <SplitTextLite text={'把品牌、内容、调研和产品原型\n连成一条执行链路。'} as="p" by="words" />
           </div>
 
           <div className="project-grid">

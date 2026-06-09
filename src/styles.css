@@ -353,6 +353,7 @@ textarea {
 
 p.split-text {
   display: block;
+  white-space: pre-line;
 }
 
 .split-unit {
