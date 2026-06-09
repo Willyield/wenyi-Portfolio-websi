@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+perf-trace-*.json
+public/media/projects/*.jpg
+public/media/projects/*.jpeg
+public/media/projects/*.png
+!public/media/projects/optimized/
+!public/media/projects/optimized/*.webp
