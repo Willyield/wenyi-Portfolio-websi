@@ -501,7 +501,7 @@ function App() {
 
           <div className="experience-copy">
             <p className="section-eyebrow">Profile</p>
-            <SplitTextLite text="在运营、产品与 AI 工具之间，搭建能被验证的增长原型。" as="h2" by="words" />
+            <SplitTextLite text="在运营、产品与 AI工具之间， 搭建能被验证的增长原型。" as="h2" by="words" />
             <SplitTextLite
               text={`我是厦门大学嘉庚学院广告学本科在读学生，预计 ${profile.graduation} 毕业。 过往项目覆盖品牌营销、内容运营、产品 MVP 搭建、 博主建联、矩阵号运营与 AIGC 内容辅助，熟悉调研访谈、内容选题、产品迭代和跨角色推进。`}
               as="p"
